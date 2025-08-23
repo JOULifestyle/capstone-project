@@ -52,14 +52,16 @@ yarn start
 Open http://localhost:3000 to view in the browser.
 
 Project Structure
+---
 ```
 src/
 ├── component/
 │   └── BookingFormStep1.js   # Main form component with validation
 ├── App.js
 ├── index.js
-```
 
+```
+---
 Usage
 Select a date (today or future dates only).
 
@@ -81,7 +83,7 @@ License
 This project is licensed under the MIT License.
 
 Author
-Your Name –Israel Olasehinde
+Israel Olasehinde- https://github.com/JOULifestyle
 
 
 ---
