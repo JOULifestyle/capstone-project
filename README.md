@@ -12,6 +12,7 @@ This is a **React-based booking form** (Step 1) project that allows users to sel
 - Validation messages for required fields
 - LocalStorage support to save step 1 data
 - Integration-ready for multi-step booking workflow
+- Unit testing
 
 ## Tech Stack
 

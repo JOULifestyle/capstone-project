@@ -6,7 +6,7 @@ import { fetchAPI } from '../api';
 // 1. Initialize available times using the API
 
 export const initializeTimes = () => {
-  const today = new Date(); // 👈 keep it a Date object
+  const today = new Date(); //  keep it a Date object
   return fetchAPI(today);
 };
 

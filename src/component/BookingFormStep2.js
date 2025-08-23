@@ -1,4 +1,3 @@
-// src/component/BookingFormStep2.js
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -54,7 +53,7 @@ function BookingFormStep2({ setFormData }) {
         value={name}
         onChange={(e) => {
           setName(e.target.value);
-          setFormData?.((prev) => ({ ...prev, name: e.target.value })); // ✅ wire for test
+          setFormData?.((prev) => ({ ...prev, name: e.target.value })); //  wire for test
         }}
         placeholder="Enter your name"
         required
@@ -67,7 +66,7 @@ function BookingFormStep2({ setFormData }) {
         value={email}
         onChange={(e) => {
           setEmail(e.target.value);
-          setFormData?.((prev) => ({ ...prev, email: e.target.value })); // ✅ wire for test
+          setFormData?.((prev) => ({ ...prev, email: e.target.value })); //  wire for test
         }}
         placeholder="example@email.com"
         required

@@ -1,4 +1,4 @@
-// src/component/BookingFormStep1.js
+
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
