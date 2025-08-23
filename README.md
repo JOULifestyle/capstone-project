@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Booking Form App - Step 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a **React-based booking form** (Step 1) project that allows users to select a date, time, number of guests, occasion, and add an optional note. It includes validation to ensure required fields are filled before proceeding.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Select date (cannot be in the past)
+- Choose available times dynamically filtered based on date and existing reservations
+- Enter number of guests (minimum 1, maximum 20)
+- Select occasion (Birthday, Engagement, Anniversary, Other)
+- Add a short optional note
+- Validation messages for required fields
+- LocalStorage support to save step 1 data
+- Integration-ready for multi-step booking workflow
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React (Functional Components & Hooks)
+- React Router (for navigation)
+- JavaScript (ES6+)
+- LocalStorage for temporary data persistence
+- Tailwind CSS (optional, if you use it for styling)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (>= 16)
+- npm or yarn
+- Git
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+npm install
+# or
+yarn install
+Run the app locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
+# or
+yarn start
+Open http://localhost:3000 to view in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project Structure
+```
+src/
+├── component/
+│   └── BookingFormStep1.js   # Main form component with validation
+├── App.js
+├── index.js
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Usage
+Select a date (today or future dates only).
 
-## Learn More
+Choose an available time.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enter the number of guests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Select an occasion.
 
-### Code Splitting
+Add a short note (optional).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click Proceed to go to the next step.
 
-### Analyzing the Bundle Size
+Validation errors will appear if required fields are missing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+License
+This project is licensed under the MIT License.
 
-### Advanced Configuration
+Author
+Your Name –Israel Olasehinde
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
