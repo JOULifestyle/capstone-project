@@ -56,7 +56,7 @@ Project Structure
 ```
 src/
 ├── component/
-│   └── BookingFormStep1.js   # Main form component with validation
+│   └── BookingFormSteps.js   # Main form component with validation
 ├── App.js
 ├── index.js
 
